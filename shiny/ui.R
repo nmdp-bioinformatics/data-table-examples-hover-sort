@@ -14,6 +14,16 @@ body <- dashboardBody(
   singleton(
     tags$head(tags$script(src = "message-handler.js"))
   ),
+  singleton(
+    tags$head(tags$script(src = "jquery.qtip.min.js"))
+  ),
+  singleton(
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "jquery.qtip.min.css")
+    )
+    ),
+  
+  
   
   tabItems(
     tabItem(tabName = "dashboard",
