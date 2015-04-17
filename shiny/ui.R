@@ -29,7 +29,7 @@ body <- dashboardBody(
     tabItem(tabName = "dashboard",
             box(title="example table",solidHeader = TRUE,collapsible = TRUE,id="box_1",
                 width=6,
-            dataTableOutput("sampleTable")
+                div(style = 'overflow-x: scroll',DT::dataTableOutput("sampleTable"))
             ),
             box(title="crap its me",id="box_2",solidHeader = TRUE,collapsible = TRUE, width=6,
                 h2("try it stuff here")
