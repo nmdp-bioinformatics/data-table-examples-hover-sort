@@ -9,4 +9,10 @@ server <- function(input, output, session) {
                     pageLength = 5,scrollX=TRUE
                   ))
   })
+  
+  observe({
+    session$sendCustomMessage(type = 'testmessage',
+                              message = list(a = 1, b = 'text',
+                                             controller = 1))
+  })
 }
