@@ -30,8 +30,6 @@ server <- function(input, output, session) {
                                                "fixed: true",
                                                "}",
                                                "}, event);",
-                                               "});",
-                                      
                                                "});")                    
                                       )
   })
